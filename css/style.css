@@ -1,0 +1,480 @@
+/*body style*/
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+.content{
+  background-color: #eaf3f8;
+  position: relative;
+}
+/*side-nav-style*/
+.sidenav {
+  background: #263137; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#263137, #273238); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#263137, #273238); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#263137, #273238); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#263137, #273238); /* Standard syntax */
+  height: auto;
+  padding: 0 !important;
+
+  position: absolute;
+  z-index: 2;
+  width: 16.66666667%;
+  transition: 0.2s ease-out;
+  left: 0;
+}
+.sidenav img{
+  width: 90%;
+  margin: 25px auto 0;
+}
+.sidenav-toggle{
+  left: -100%;
+  /*left: 0 !important;*/
+}
+.fullwidth-class{
+  width: 100% !important;
+}
+/*.black-layer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.8;
+  z-index: 1;
+  display: none;
+}*/
+
+.user-profile{
+  text-align: center;
+  margin: 50px 0;
+ }
+ .user-profile img{
+    border-radius: 50%;
+    border: 4px solid #263137;
+    margin: auto;
+    width: 80px;
+ }
+ .user-profile span{
+    height: 90px;
+    width: 90px;
+    background: red;
+    background: -webkit-linear-gradient(-90deg, #58c5cf, #e1b95f);
+    background: -o-linear-gradient(-90deg, #58c5cf, #e1b95f);
+    background: -moz-linear-gradient(-90deg, #58c5cf, #e1b95f);
+    background: linear-gradient(-90deg, #58c5cf, #e1b95f);
+    display: block;
+    border-radius: 50%;
+    padding-top: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+ }
+ .user-profile em{
+    height: 15px;
+    width: 15px;
+    background: #48be8c;
+    border-radius: 50%;
+    display: inline-block;
+ }
+ .user-profile i{
+    color: #515f66;
+    cursor: pointer;
+    font-size: 18px;
+ }
+ .user-profile b{
+    color: #b8cbd4;
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+ }
+ .user-profile label{
+    color: #6b7e88;
+    font-size: 12px;
+    margin: 0;
+ }
+ .nav-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+ }
+ .nav-list>li{
+  position: relative;
+  border-bottom: 2px solid #29363b;
+ }
+ .nav-list li a{
+
+ }
+ .nav-list li a label{
+    color: #80919a;
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0;
+    padding: 10px 15px;
+    background-color: #2b3a41;
+    width: 100%;
+    cursor: pointer;
+
+ }
+ .nav-list li i{
+    color: #58676e;
+    font-size: 26px;
+    position: absolute;
+    right: 15px;
+    top: 6px;
+ }
+ .child-nav-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+ }
+ .child-nav-list li{
+    cursor: pointer;
+ }
+ .child-nav-list li a label:hover{
+  background-color: #1b2429;
+  color: #27a9c7;
+ }
+ .arrow_box.active{
+  background-color: #1b2429;
+  color: #27a9c7;
+ }
+ .child-nav-list li a label{
+    padding: 10px 15px 10px 30px;
+    background-color: #202b2f;
+    cursor: pointer;
+ }
+ .arrow_box {
+  position: relative;
+  background: #eaf3f8;
+}
+.rotate-arrow{
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */
+  transform: rotate(90deg); /* Standard syntax */
+}
+.arrow_box:after {
+  right: 0%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(234, 243, 248, 0);
+  border-right-color: #eaf3f8;
+  border-width: 12px;
+  margin-top: -14px;
+}
+/*notification-header-style*/
+.notification-header{
+  background-color: #273238;
+  color: #fff;
+ }
+ .notification-header:after{
+  content: '';
+  display: block;
+  clear:both;
+ }
+ .header-tools{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: left;
+ }
+ .header-tools li{
+  display: inline-block;
+  margin-right: 20px;
+ }
+ .header-tools li i{
+  font-size: 24px;
+  padding: 10px;
+  color: #5f6e75;
+  transition: 0.3s ease;
+ }
+  .header-tools li i:hover{
+    color: #27a9c7;
+    background-color: #1d282c;
+    cursor: pointer;
+  }
+  .header-switch{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  }
+  .header-switch li{
+    display: inline-block;
+  }
+  .header-switch li i{
+    font-size: 24px;
+    padding: 10px;
+    color: #5f6e75;
+    transition: 0.3s ease;
+  }
+  .header-notification{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  }
+  .header-notification li{
+    display: inline-block;
+    position: relative;
+    margin: 0 5px;
+  }
+  .header-notification li i{
+    font-size: 24px;
+    padding: 10px;
+    color: #5f6e75;
+    transition: 0.3s ease;
+  }
+  .header-notification li label{
+    position: absolute;
+    top: 7px;
+    right: 5px;
+    background: #fd5c24;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    line-height: 16px;
+    text-align: center;
+    font-size: 10px;
+  }
+  /*toggle button code style*/
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 12px;
+  }
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: -1px;
+  bottom: -2px;
+  background-color: #2ad0f5;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2995ac;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*navigation-calender-header*/
+.nav-cal-header{
+  background-color:#f3fbfe;
+  margin-bottom: 15px;
+  padding: 10px 0;
+ }
+ .nav-cal-header label{
+    font-weight: normal;
+    color: darkgray;
+    margin: 0;
+    font-size: 12px;
+    vertical-align: -webkit-baseline-middle;
+ }
+ .nav-cal-header span{
+    color: darkgray;
+    font-size: 12px;
+    border: 2px solid lightgray;
+    border-radius: 3px;
+    padding: 5px;
+ }
+ .date-holder{
+    border: 2px solid #ccc;
+    width: 25%;
+ }
+ .date-holder input{
+    display: inline-block;
+    width: 49%;
+    border-radius: 0px;
+    border: none;
+    background: transparent;
+    box-shadow: 0 0 0;
+    font-size: 12px;
+    color: darkgray;
+    padding: 5px;
+    height: 22px;
+ }
+/*display-area style*/
+.display-area{
+  
+}
+.dashboard-background{
+  background-color: #f8fefe;
+  margin-bottom: 25px;
+  /*height: 350px;*/
+  border-radius: 3px;
+  padding: 15px;
+}
+.dashboard-background h3{
+  color: #687c8f;
+  font-size: 16px;
+  font-weight: bold;
+  margin:0;
+  display: inline-block;
+}
+.dashboard-background i{
+  color: #b8c3cd;
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+.dashboard-background hr{
+  margin: 5px 0 0 0;
+  border-bottom: 2px solid #2bd3f8;
+  width: 45px;
+}
+.dashboard-background:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+ /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+
+
+/* Set gray background color and 100% height */
+ 
+/* On small screens, set height to 'auto' for the grid */
+@media screen and (max-width: 767px) {
+  .row.content {height: auto;} 
+}
+/*@media only screen and (max-width: 991px){
+  .sidenav{
+    left: -160px;
+  }
+}*/
+
+/*amchart style codes*/
+#chartdiv, #chartdiv2, #chartdiv3, #chartdiv4, #chartdiv5, #chartdiv6, #chartdiv7, #chartdiv8{
+  width   : 100%;
+  height    : 350px;
+  font-size : 11px;
+}
+.amcharts-export-menu-top-right {
+  top: 10px;
+  right: 0;
+}   
+li.export-main{
+  display: none;
+}
+div.amcharts-chart-div a{
+  display: none !important;
+}
+/*For SM screen style codes*/
+@media only screen and (max-width: 991px){
+  .nav-list li a label {
+    font-size: 12px;
+  }
+  .nav-list li i{
+    font-size: 16px;
+    top: 8px;
+  }
+  .sidenav{
+    width: 25%;
+  }
+}
+/*For XS screen style codes*/
+@media only screen and (max-width: 767px){
+  .sidenav{
+    width: 33.33%;
+  }
+  .user-profile em{
+    width: 10px;
+    height: 10px;
+  }
+  .user-profile span{
+    height: 70px;
+    width: 70px;
+    margin: 0 5px;
+  }
+  .user-profile img{
+    width: 60px;
+  }
+  .user-profile i{
+    font-size: 12px;
+  }
+  .user-profile label{
+    font-size: 10px;
+  }
+  .user-profile b{
+    font-size: 12px;
+  }
+  .header-tools{
+    display: inline-block;
+    float: none;
+  }
+  .header-tools li:nth-child(2), .header-tools li:nth-child(3){
+    display: none;
+  }
+  .notification-header div{
+    display: inline-block;
+    text-align: center;
+  }
+  .nav-cal-header label{
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+  .nav-cal-header span{
+    float: none !important;
+    display: block;
+    max-width: 175px;
+    text-align: center;
+    margin: auto;
+    font-size: 10px;
+  }
+  .header-notification li i{
+    font-size: 20px;
+  }
+  .header-notification li label{
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+  }
+  .header-switch{
+    display: none;
+  }
+}
+

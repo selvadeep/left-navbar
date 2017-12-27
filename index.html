@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sample-Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/926305ec7d.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row content">
+    <!-- sidenav code -->
+    <div class="sidenav" >
+      <img src="images/shiva.jpg" class="img-responsive" alt="shiva-logo">
+      <div class="user-profile">
+        <em></em>
+        <span>
+          <img src="images/shiva.jpg" class="img-responsive" alt="User-Image">
+        </span>
+        <i class="fa fa-cog" aria-hidden="true"></i>
+        <b>Karthikeyan</b>
+        <label>UI Developer</label>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <a href="#"><label>DASHBOARDS</label></a>
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+          <ul class="child-nav-list">
+            <li>
+              <a href="#"><label>Dashboard 1</label></a>
+            </li>
+            <li>
+              <a href="#"><label>Dashboard 2</label></a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><label>FORMS</label></a>
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+          <ul class="child-nav-list">
+            <li>
+              <a href="#"><label>Dashboard 1</label></a>
+            </li>
+            <li>
+              <a href="#"><label>Dashboard 2</label></a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><label>TABELS</label></a>
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+          <ul class="child-nav-list">
+            <li>
+              <a href="#"><label>Dashboard 1</label></a>
+            </li>
+            <li>
+              <a href="#"><label>Dashboard 2</label></a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><label>CHARTS</label></a>
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+          <ul class="child-nav-list">
+            <li>
+              <a href="#"><label>Dashboard 1</label></a>
+            </li>
+            <li>
+              <a href="#"><label>Dashboard 2</label></a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><label>UIKITS</label></a>
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+          <ul class="child-nav-list">
+            <li>
+              <a href="#"><label>Dashboard 1</label></a>
+            </li>
+            <li>
+              <a href="#"><label>Dashboard 2</label></a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><label>PAGES</label></a>
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+          <ul class="child-nav-list">
+            <li>
+              <a href="#"><label>Dashboard 1</label></a>
+            </li>
+            <li>
+              <a href="#"><label>Dashboard 2</label></a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- <div class="col-md-2 hidden-sm hidden-xs"> -->
+      <!-- <h4>Company Logo</h4> -->
+    <!-- </div> -->
+    <div class="black-layer"></div>
+    <!-- right side content -->
+    <div class="col-md-10 col-md-offset-2 col-sm-offset-3 col-sm-9 col-xs-offset-4 col-xs-8 adcon" style="padding: 0;">
+      <div class="">
+        <!-- notification header code -->
+        <div class="notification-header">
+          <ul class="header-tools">
+            <li class="hamburger">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </li>
+            <li>
+              <i class="fa fa-arrows-alt" aria-hidden="true"></i>
+            </li>
+            <li>
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </li>
+          </ul>
+          <div class="pull-right">
+            <ul class="header-switch">
+              <li>
+                <i class="fa fa-unlock-alt" aria-hidden="true" style="color: #394850;"></i>
+              </li>
+              <li>
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <div class="slider round"></div>
+                </label>
+              </li>
+              <li>
+                <i class="fa fa-lock" aria-hidden="true"></i>
+              </li>
+            </ul>
+            <ul class="header-notification">
+              <li>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <label>2</label>
+              </li>
+              <li>
+                <i class="fa fa-download" aria-hidden="true"></i>
+                <label style="background-color: #e24233;">9</label>
+              </li>
+              <li>
+                <i class="fa fa-sign-in" aria-hidden="true" style="color:#363e44;"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- navigation calender code -->
+      <div class="col-md-12 nav-cal-header">
+        <label>HOME / DASHBOARD</label>
+        <span class="pull-right">SEP 11 2015 - OCT 11 2015<input type="radio" style="vertical-align: sub; margin: 0 5px 0 10px;"></span>
+        <!-- <div class="date-holder pull-right">
+          <input type="date" class="form-control" value="SEP 11 2015">
+          <input type="date" class="form-control" value="OCT 11 2015">
+        </div> -->
+      </div>
+      <!-- display area code -->
+      <div class="col-md-12 display-area">
+        <div class="row">
+          <div class="col-sm-6 col-md-3">
+            <div class="dashboard-background">
+              <h3>PROFITE RATE</h3>
+              <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+              <hr>
+              <div id="chartdiv"></div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="dashboard-background">
+              <h3>WORLD MARKET</h3>
+              <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+              <hr>
+              <div id="chartdiv2"></div> 
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="dashboard-background">
+              <h3>GOAL ACHIVED</h3>
+              <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+              <hr>
+              <div id="chartdiv3" style="height: 116px;"></div>
+              <div id="chartdiv4" style="height: 116px;"></div>  
+              <div id="chartdiv5" style="height: 116px;"></div> 
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="dashboard-background">
+             <h3>CURRENT SERVER LOAD</h3>
+             <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+             <hr>
+             <div id="chartdiv6"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-7">
+            <div class="dashboard-background">
+              <h3>MY OVERALL STATUS</h3>
+              <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+              <hr>
+               <div id="chartdiv7"></div> 
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <div class="dashboard-background">
+              <h3>ONGOING MARKETING</h3>
+              <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+              <hr>
+               <div id="chartdiv8"></div> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- script CDN for amcharts -->
+<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="https://www.amcharts.com/lib/3/pie.js"></script>
+<script src="https://www.amcharts.com/lib/3/serial.js"></script>
+<script src="https://www.amcharts.com/lib/3/radar.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+</body>
+</html>
